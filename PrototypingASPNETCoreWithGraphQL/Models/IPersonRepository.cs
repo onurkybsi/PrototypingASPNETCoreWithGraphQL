@@ -6,6 +6,8 @@ namespace PrototypingASPNETCoreWithGraphQL.Models
     {
         IQueryable<Person> Persons { get; }
 
+        Person GetPerson(int id);
+
         void Save(Person person);
 
         void Delete(int id);

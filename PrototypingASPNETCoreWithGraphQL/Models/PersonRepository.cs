@@ -15,6 +15,8 @@ namespace PrototypingASPNETCoreWithGraphQL.Models
         }
 
         public IQueryable<Person> Persons => context.Person;
+
+        public Person GetPerson(int id) => context.Person.FirstOrDefault(x => x.Id == id);
         
         public void Save(Person person)
         {

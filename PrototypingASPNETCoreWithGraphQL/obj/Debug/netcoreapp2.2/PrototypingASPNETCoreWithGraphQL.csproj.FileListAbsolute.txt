@@ -14,13 +14,5 @@ C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCo
 C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\obj\Debug\netcoreapp2.2\PrototypingASPNETCoreWithGraphQL.dll
 C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\obj\Debug\netcoreapp2.2\PrototypingASPNETCoreWithGraphQL.pdb
 C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\bin\Debug\netcoreapp2.2\PrototypingASPNETCoreWithGraphQL.Views.dll
-C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\bin\Debug\netcoreapp2.2\PrototypingASPNETCoreWithGraphQL.Views.pdb
-C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\obj\Debug\netcoreapp2.2\PrototypingASPNETCoreWithGraphQL.TagHelpers.input.cache
-C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\obj\Debug\netcoreapp2.2\PrototypingASPNETCoreWithGraphQL.TagHelpers.output.cache
-C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\obj\Debug\netcoreapp2.2\PrototypingASPNETCoreWithGraphQL.RazorCoreGenerate.cache
-C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
-C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\obj\Debug\netcoreapp2.2\PrototypingASPNETCoreWithGraphQL.RazorTargetAssemblyInfo.cs
-C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\obj\Debug\netcoreapp2.2\PrototypingASPNETCoreWithGraphQL.Views.pdb
 C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\obj\Debug\netcoreapp2.2\PrototypingASPNETCoreWithGraphQL.csproj.CopyComplete
 C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\obj\Debug\netcoreapp2.2\PrototypingASPNETCoreWithGraphQL.csprojAssemblyReference.cache

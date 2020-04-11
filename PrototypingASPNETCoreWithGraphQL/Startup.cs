@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using GraphiQl;
+using GraphQL;
+using GraphQL.Types;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PrototypingASPNETCoreWithGraphQL.Models;
+using PrototypingASPNETCoreWithGraphQL.Models.GraphQLModels;
 
 namespace PrototypingASPNETCoreWithGraphQL
 {
@@ -20,16 +19,20 @@ namespace PrototypingASPNETCoreWithGraphQL
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
             services.AddDbContext<PrototypingASPNETCoreWithGraphQLDbContext>(options => options.UseSqlServer(Configuration["Data:PrototypingASPNETCoreWithGraphQL:ConnectionString"]));
             services.AddTransient<IPersonRepository, PersonRepository>();
-            services.AddMvc();
+            services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
+            services.AddSingleton<PersonQuery>();
+            services.AddSingleton<PersonType>();
+            var sp = services.BuildServiceProvider();
+            services.AddSingleton<ISchema>(new PersonSchema(new FuncDependencyResolver(type => sp.GetService(type))));
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseDeveloperExceptionPage();
-            app.UseStatusCodePages();
-            app.UseStaticFiles();
+            app.UseGraphiQl();
             app.UseMvcWithDefaultRoute();
         }
     }

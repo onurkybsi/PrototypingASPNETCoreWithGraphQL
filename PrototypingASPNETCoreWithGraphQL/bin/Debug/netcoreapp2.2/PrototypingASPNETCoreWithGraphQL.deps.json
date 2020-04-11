@@ -25,6 +25,8 @@
       "PrototypingASPNETCoreWithGraphQL/1.0.0": {
         "dependencies": {
           "GraphQL": "2.4.0",
+          "GraphQL.Server.Ui.GraphiQL": "3.4.0",
+          "GraphiQL": "2.0.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
@@ -35,6 +37,22 @@
         },
         "compile": {
           "PrototypingASPNETCoreWithGraphQL.dll": {}
+        }
+      },
+      "GraphiQL/2.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc": "2.2.0",
+          "Microsoft.AspNetCore.StaticFiles": "2.2.0",
+          "Microsoft.Extensions.FileProviders.Embedded": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphiQL.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/GraphiQL.dll": {}
         }
       },
       "GraphQL/2.4.0": {
@@ -67,6 +85,20 @@
         },
         "compile": {
           "lib/netstandard1.1/GraphQL-Parser.dll": {}
+        }
+      },
+      "GraphQL.Server.Ui.GraphiQL/3.4.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphQL.Server.Ui.GraphiQL.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/GraphQL.Server.Ui.GraphiQL.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
@@ -3641,6 +3673,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "GraphiQL/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wUUzFiZrXZWfxO6EwrgPJrPG4RhHHRl4COZlRdQ7tfdRNgldalqYWQlsISgwBMdaoLVXi5looSP7AgJ8mT6CQQ==",
+      "path": "graphiql/2.0.0",
+      "hashPath": "graphiql.2.0.0.nupkg.sha512"
+    },
     "GraphQL/2.4.0": {
       "type": "package",
       "serviceable": true,
@@ -3654,6 +3693,13 @@
       "sha512": "sha512-6vPhia+kfo44leH7GNAo4g/BRVxvprtu+96N4T218dTM/0KYhRCA8diqZFIib777TgKZpQfaaL014McoCuHTJA==",
       "path": "graphql-parser/3.0.0",
       "hashPath": "graphql-parser.3.0.0.nupkg.sha512"
+    },
+    "GraphQL.Server.Ui.GraphiQL/3.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3xwVb6vHx2I4lM0DlpLwmdatC8n1eLq7aHXfo13oSQJKMvAVnmNuT3cHJL1RuKrcpHDQHmTwGvIQAeGFyL0R+A==",
+      "path": "graphql.server.ui.graphiql/3.4.0",
+      "hashPath": "graphql.server.ui.graphiql.3.4.0.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",
