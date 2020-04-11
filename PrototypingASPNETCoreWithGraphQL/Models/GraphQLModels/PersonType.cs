@@ -4,6 +4,7 @@ namespace PrototypingASPNETCoreWithGraphQL.Models.GraphQLModels
 {
     public class PersonType : ObjectGraphType<Person>
     {
+        // Client'tan istek aldigimizda dondurebilecegimiz datayi modelliyoruz.
         public PersonType()
         {
             Name = "Person";

@@ -23,17 +23,17 @@ namespace PrototypingASPNETCoreWithGraphQL
             services.AddDbContext<PrototypingASPNETCoreWithGraphQLDbContext>(options => options.UseSqlServer(Configuration["Data:PrototypingASPNETCoreWithGraphQL:ConnectionString"]));
             services.AddTransient<IPersonRepository, PersonRepository>();
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
+            // Query, Type ve Schema application boyunca bize tek bir instance olarak yeterli.Buyuzden singleton register ediyoruz.
             services.AddSingleton<PersonQuery>();
             services.AddSingleton<PersonType>();
-            var sp = services.BuildServiceProvider();
-            services.AddSingleton<ISchema>(new PersonSchema(new FuncDependencyResolver(type => sp.GetService(type))));
+            services.AddSingleton<ISchema>(new PersonSchema(new FuncDependencyResolver(type => services.BuildServiceProvider().GetService(type))));
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseDeveloperExceptionPage();
             app.UseGraphiQl();
-            app.UseMvcWithDefaultRoute();
+            app.UseMvc();
         }
     }
 }

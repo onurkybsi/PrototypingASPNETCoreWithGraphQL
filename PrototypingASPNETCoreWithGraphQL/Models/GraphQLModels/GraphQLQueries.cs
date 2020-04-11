@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace PrototypingASPNETCoreWithGraphQL.Models
+namespace PrototypingASPNETCoreWithGraphQL.Models.GraphQLModels
 {
     public class GraphQLQueries
     {

@@ -1,7 +1,7 @@
 ﻿using GraphQL;
 using GraphQL.Types;
 using Microsoft.AspNetCore.Mvc;
-using PrototypingASPNETCoreWithGraphQL.Models;
+using PrototypingASPNETCoreWithGraphQL.Models.GraphQLModels;
 using System.Threading.Tasks;
 
 namespace PrototypingASPNETCoreWithGraphQL.Controllers
