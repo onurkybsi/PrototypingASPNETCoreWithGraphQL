@@ -16,14 +16,14 @@ namespace PrototypingASPNETCoreWithGraphQL.Models
 
         public IQueryable<Person> Persons => context.Person;
 
-        public Person GetPerson(int id) => context.Person.FirstOrDefault(x => x.Id == id);
+        public Person GetPersonById(int id) => context.Person.SingleOrDefault(x => x.Id == id);
         
-        public void Save(Person person)
+        public Person Save(Person person)
         {
             Person _person = context.Person.FirstOrDefault(x => x.Id == person.Id);
 
             if (_person == null)
-                context.Add(_person);
+                context.Add(person);
             else
             {
                 _person.Name = person.Name;
@@ -32,19 +32,23 @@ namespace PrototypingASPNETCoreWithGraphQL.Models
             }
 
             context.SaveChanges();
+
+            return _person ?? person;
         }
 
-        public void Delete(int id)
+        public Person Delete(int id)
         {
-            Person _person = context.Person.FirstOrDefault(x => x.Id == id);
+            Person _person = context.Person.SingleOrDefault(x => x.Id == id);
             
             if(_person == null)
-                return;
+                return null;
             else
             {
                 context.Remove(_person);
                 context.SaveChanges();
             }
+
+            return _person;
         }
     }
 }

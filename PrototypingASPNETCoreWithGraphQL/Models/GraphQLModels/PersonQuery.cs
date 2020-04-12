@@ -11,6 +11,10 @@ namespace PrototypingASPNETCoreWithGraphQL.Models.GraphQLModels
             // Ikinci parametrede bu query'i nasil resolve edecegimizi giriyoruz.
             Field<ListGraphType<PersonType>>("getallpersons",
                 resolve: context => personRepository.Persons);
-        }
+
+            Field<PersonType>("getpersonbyid",
+                arguments: new QueryArguments(new QueryArgument<IntGraphType> { Name = "id" }),
+                resolve: context => personRepository.GetPersonById(context.GetArgument<int>("id")));
+        }      
     }
 }

@@ -15,4 +15,3 @@ C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCo
 C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\obj\Debug\netcoreapp2.2\PrototypingASPNETCoreWithGraphQL.pdb
 C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\bin\Debug\netcoreapp2.2\PrototypingASPNETCoreWithGraphQL.Views.dll
 C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\obj\Debug\netcoreapp2.2\PrototypingASPNETCoreWithGraphQL.csproj.CopyComplete
-C:\Users\onurb\Source\Repos\PrototypingASPNETCoreWithGraphQL\PrototypingASPNETCoreWithGraphQL\obj\Debug\netcoreapp2.2\PrototypingASPNETCoreWithGraphQL.csprojAssemblyReference.cache

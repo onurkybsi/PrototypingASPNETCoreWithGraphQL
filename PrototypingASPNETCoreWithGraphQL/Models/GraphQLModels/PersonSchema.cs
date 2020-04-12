@@ -11,6 +11,7 @@ namespace PrototypingASPNETCoreWithGraphQL.Models.GraphQLModels
         public PersonSchema(IDependencyResolver dependencyResolver) : base(dependencyResolver)
         {
             Query = dependencyResolver.Resolve<PersonQuery>();
+            Mutation = dependencyResolver.Resolve<PersonMutation>();
         }
     }
 }

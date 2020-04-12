@@ -25,7 +25,9 @@ namespace PrototypingASPNETCoreWithGraphQL
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
             // Query, Type ve Schema application boyunca bize tek bir instance olarak yeterli.Buyuzden singleton register ediyoruz.
             services.AddSingleton<PersonQuery>();
+            services.AddSingleton<PersonMutation>();
             services.AddSingleton<PersonType>();
+            services.AddSingleton<PersonInputType>();
             services.AddSingleton<ISchema>(new PersonSchema(new FuncDependencyResolver(type => services.BuildServiceProvider().GetService(type))));
         }
 
